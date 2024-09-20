@@ -15,17 +15,20 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
+        <link href="{% static 'css/mis_estilos.css' %}" rel="stylesheet" />
     </head>
     <body>
         <!-- Navigation-->
         <nav class="navbar navbar-light bg-light static-top">
             <div class="container">
-                <a class="navbar-brand" href="#!">Inicio</a>
+                <div class="home-button">
+                    <a class="navbar-brand" href="#!">Inicio</a>
+                </div>                
                 <a class="navbar-brand" href="#!">Profesores</a>
                 <a class="navbar-brand" href="#!">Cursos</a>
                 <a class="navbar-brand" href="#!">Estudiantes</a>
                 <a class="navbar-brand" href="#!">Entregables</a>
-                <a class="btn btn-primary" href="#signup">Inicio de Sesion</a>
+                <a class="btn btn-primary" href="#signup">Iniciar Sesion</a>
             </div>
         </nav>
         <!-- Masthead-->
