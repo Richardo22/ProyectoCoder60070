@@ -1,12 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cursos</title>
-</head>
-<body>
-    <body style="background-color: yellow;"></body>
-    <h1>Vista de Cursos</h1>
-</body>
-</html>
+{% extends 'padre.html' %}
+
+{% block contenidoQueCambia %}
+    <h1> Los cursos que tenemos disponibles son: </h1>
+    <ul>
+        <li>Python Basico</li>
+        <li>JavaScrip Basico</li>
+        <li> React Intermedio</li>
+    </ul>
+
+{% endblock contenidoQueCambia %}
