@@ -4,18 +4,18 @@ from .models import Curso
 
 # Create your views here.
 def crea_curso(req, nombre, camada):
-    nuevo_curso= Curso(nombre=nombre, camada=camada)
-    nuevo_curso.save()
+    nuevo_cursos= cursos(nombre=nombre, camada=camada)
+    nuevo_cursos.save()
     return HttpResponse(f"""
-    <p> Curso: {nuevo_curso.nombre} - Camada {nuevo_curso.camada} creado con éxito! </p>  
+    <p> Curso: {nuevo_cursos.nombre} - Camada {nuevo_cursos.camada} creado con éxito! </p>  
      """)
 def lista_curso(req):
-    lista=Curso.objects.all()
+    lista=cursos.objects.all()
     return render(req, "lista_cursos.html", {"lista_cursos": lista})
 def inicio (req):
     return render(req, "inicio.html", {})
-def curso (req):
-    return render(req, "curso.html", {})
+def cursos (req):
+    return render(req, "cursos.html", {})
 def profesores (req):
     return render(req, "profesores.html", {})
 def estudiantes (req):

@@ -5,8 +5,8 @@ urlpatterns = [
     path('agrega-curso/<nombre>/<camada>', crea_curso),
     path('lista-cursos/', lista_curso),
     path ('',inicio),
-    path ('estudiantes',estudiantes),
-    path ('cursos', curso),
-    path ('entregables',entregables),
-    path ('profesores',profesores),
+    path ('estudiantes/',estudiantes, name='estudiantes'),
+    path ('curso/', cursos, name='cursos'),
+    path ('entregables/',entregables, name='entregables'),
+    path ('profesores/',profesores, name='profesores'),
 ]
