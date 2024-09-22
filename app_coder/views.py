@@ -10,7 +10,7 @@ def crea_curso(req, nombre, camada):
     <p> Curso: {nuevo_cursos.nombre} - Camada {nuevo_cursos.camada} creado con éxito! </p>  
      """)
 def lista_curso(req):
-    lista=cursos.objects.all()
+    lista=Curso.objects.all()
     return render(req, "lista_cursos.html", {"lista_cursos": lista})
 def inicio (req):
     return render(req, "inicio.html", {})
