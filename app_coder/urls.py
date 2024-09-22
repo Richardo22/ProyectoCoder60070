@@ -9,4 +9,5 @@ urlpatterns = [
     path ('curso/', cursos, name='cursos'),
     path ('entregables/',entregables, name='entregables'),
     path ('profesores/',profesores, name='profesores'),
+    path ('curso-formulario/',curso_formulario, name='CursoFormulario'),
 ]

@@ -22,3 +22,5 @@ def estudiantes (req):
     return render(req, "estudiantes.html", {})
 def entregables (req):
     return render(req, "entregables.html", {})
+def curso_formulario(req):
+    return render(req, "curso_formulario.html", {})
